@@ -1,0 +1,237 @@
+button.submit,
+a.submit {
+    _background-image: url(../img/button-right.gif);
+    -ie-xp: expression(
+              this.parsed ? 0 :(
+                this.onmouseover = new Function("this.className += ' submit-hover'"),
+                this.onmouseout = new Function("this.className = this.className.replace(' submit-hover','')"),
+              this.parsed = 1)
+            );
+    overflow: visible;
+}
+
+a.submit {
+    overflow: hidden;
+}
+
+button.submit div,
+a.submit span {
+    _background-image: url(../img/button-left.gif);
+    float: left;
+}
+button.submit-hover {
+    background-position: right -25px;
+    cursor: pointer;
+}
+
+button.submit-hover div {
+    background-position: left -25px;
+}
+
+ul li {
+    -ie-xp: expression(
+        this.parsed ? 0 : (
+            this.className += ((this == this.parentNode.firstChild) ? " first-child" :""),
+            this.className += ((this == this.parentNode.lastChild) ? " last-child" :""),
+            this.parsed = 1
+        )
+    );
+}
+
+ul.breadcrumbs li {
+    -ie-xp: expression(
+        this.parsed ? 0 : (
+            this == this.parentNode.firstChild ? 0 : this.innerHTML = " \00bb  " + this.innerHTML,
+            this.parsed = 1
+        )
+    )
+}
+
+ul.pipes li {
+    -ie-xp: expression(
+        this.parsed ? 0 : (
+            this == this.parentNode.firstChild ? 0 : this.innerHTML = " | " + this.innerHTML,
+            this.parsed = 1
+        )
+    )
+}
+
+#top #logo,
+#top #logo a {
+    _background-image: none;
+}
+
+#top #logo a {
+    _background-image: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/img/logo.png",sizingMethod="crop");
+}
+
+#tabs {
+    -ie-xp: expression(
+        this.parsed ? 0 : (
+            lis = this.getElementsByTagName('li'),
+            w = 0,
+            w += (lis.length > 0 ? lis[0].offsetWidth : 0),
+            w += (lis.length > 1 ? lis[1].offsetWidth : 0),
+            w += (lis.length > 2 ? lis[2].offsetWidth : 0),
+            w += (lis.length > 3 ? lis[3].offsetWidth : 0),
+            w += (lis.length > 4 ? lis[4].offsetWidth : 0),
+            w += (lis.length > 5 ? lis[5].offsetWidth : 0),
+            w += (lis.length > 6 ? lis[6].offsetWidth : 0),
+            w += (lis.length > 7 ? lis[7].offsetWidth : 0),
+            w += (lis.length > 8 ? lis[8].offsetWidth : 0),
+            w += (lis.length > 9 ? lis[9].offsetWidth : 0),
+            this.style.width = w.toString() + 'px',
+            this.parsed = 1
+        )
+    );
+}
+
+#tabs li a {
+    _background-image: url(../img/tabs.gif);
+    float: left;
+}
+
+#footer a.gsk {
+    _background-image: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/img/gsk.png",sizingMethod="crop");
+}
+
+#popup {
+    _background-image: url(../img/popup-top.gif);
+}
+
+#popup div.content {
+    _background-image: url(../img/popup-bottom.gif);
+}
+
+#popup div.content div.body {
+    _background-image: url(../img/popup-bg.gif);
+}
+
+#middle ul li a {
+    _background-image: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/img/main-tab-ie.png",sizingMethod="crop");
+    position: relative;
+    z-index: 10000;
+    overflow: hidden;
+    zoom: 1;
+    cursor: pointer;
+}
+
+#middle ul li a:hover {
+    _background-image: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/img/main-tab-ie-hover.png",sizingMethod="crop");
+    position: relative;
+    z-index: 10000;
+    overflow: hidden;
+    zoom: 1;
+}
+
+#middle {
+    _background-image: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/img/middle.png",sizingMethod="crop");
+}
+
+body.main #middle {
+    _background-image: none;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/img/middle-main.png",sizingMethod="crop");
+}
+
+#top #menubar {
+    width: 738px;
+}
+
+
+#content #submenu {
+    _background-image: url(../img/submenu-bottom.gif);
+}
+
+#content #submenu ul {
+    _background-image: url(../img/submenu-top.gif);
+}
+
+#content #submenu ul li a:hover {
+    _background-image: url(../img/submenu-hover.gif);
+}
+
+#content #submenu ul li.selected a {
+    _background-image: url(../img/submenu-selected.gif);
+}
+
+#content dl.faq {
+    _background-image: url(../img/faq-bottom.gif);
+}
+
+#content dl.faq dt {
+    _background-image: url(../img/faq-top.gif);
+    zoom: 1;
+}
+
+#content dl.faq dd {
+    _background-image: url(../img/faq-top.gif);
+}
+
+#content div.column-expert {
+    _background-image: url(../img/expert-ie6.png);
+}
+
+#content ul.calendarium {
+    clear: left;
+    zoom: 1;
+}
+
+#content ul.calendarium dl.address dd {
+    float: none;
+}
+
+#content div.calendars h4 {
+    white-space: nowrap;
+}
+
+#content ul.publist li div, #content ul.videolist li div {
+    _background-image: url(../img/videolist-arrow.gif);
+}
+
+.form label.checkbox input {
+    margin: 0 5px 12px 68px;
+}
+
+#popup {
+    _background: url(../img/popup.gif) no-repeat;
+    zoom: 1;
+}
+
+#popup ul.verifiers {
+    overflow: hidden;
+    zoom: 1;
+}
+
+#popup ul.verifiers li {
+    _margin: 0 0 0 45px;
+}
+
+#content div.form,
+#content div.fieldset {
+    zoom: 1;
+}
+
+div.form {
+    _background-image: url(../img/form-bottom.gif);
+}
+
+div.form div.fieldset {
+    _background-image: url(../img/form-top.gif);
+}
+
+.form button.submit {
+    _margin: 0 0 0 68px;
+}
+
+div.share-popup {
+    _background-image: url(../img/popup-share.gif) !important;
+}
+
+div.share-popup a.close {
+    _right: 8px !important;
+}

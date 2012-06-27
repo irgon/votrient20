@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+
+    <meta name="Description" content="" />
+    <meta name="Keywords" content="" />
+    <meta name="Author" content="Igor Rzegocki" />
+    <meta name="Copyright" content="Copyright (c) 2011 Igor Rzegocki" />
+
+    <meta name="Robots" content="index, follow" />
+    <meta name="Revisit-after" content="7 days" />
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link href="css/votrient.css" media="screen" rel="Stylesheet" type="text/css" />
+    <!--[if lt IE 8]>
+        <link href="css/votrient-ie6.css" media="screen" rel="Stylesheet" type="text/css" />
+    <![endif]-->
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.datepicker.js"></script>
+    <script type="text/javascript" src="js/votrient.js"></script>
+</head>
+<body>
+    <form action="" method="post">
+        <div id="wrapper">
+            <div id="top">
+                <div id="logo">
+                    <a href="/">Strona domowa</a>
+                    <h1>votrient&#174; pazopanib</h1>
+                    <h2>Dni stają się warte życia</h2>
+                </div>
+                <ul class="topmenu">
+                    <li><a href="">Edytuj profil</a></li>
+                    <li><a href="">Wyloguj</a></li>
+                </ul>
+                <ul id="menubar">
+                    <li class="left"><a href="">Votrient</a></li>
+                    <li><a href="">Badania i publikacje</a></li>
+                    <li><a href="">Organizacje pacjenckie</a></li>
+                    <li class="right"><a href="">Zjazdy i konferencje</a></li>
+                </ul>
+            </div>
+            <div id="middle">
+                <h1>Votrient<sup>&#174;</sup> standard w leczeniu <em>zaawansowanego raka nerkowokomórkowego</em></h1>
+            </div>
+            <div id="content">
+                <div class="column-left column-narrow">
+                    <div class="sub">
+                        <h4>Tyverb</h4>
+                        <a href="">Mechanizm działania</a>
+                        <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</p>
+                    </div>
+                    <div class="sub">
+                        <h4>Badania i publikacje</h4>
+                        <a href="">Badania II fazy</a>
+                        <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</p>
+                    </div>
+                </div>
+                <div class="column-right column-wide">
+                    <div class="header">
+                        <h3>Zgłoś działania niepożądane</h3>
+                        <ul class="breadcrumbs">
+                            <li><a href="">Strona główna</a></li>
+                            <li>Zgłoś działania niepożądane</li>
+                        </ul>
+                        <ul class="options pipes">
+                            <li class="fonts"><a href="">A<span>A</span></a></li>
+                            <li class="share"><a href="">Powiadom znajomego</a></li>
+                            <li class="print"><a href="">Drukuj</a></li>
+                        </ul>
+                    </div>
+                    <div class="form">
+                        <div class="fieldset">
+                            <h4 class="first">
+                                Osoba zgłaszająca działanie niepożądane
+                                <cite class="req">* pola obowiązkowe</cite>
+                            </h4>
+                            <dl class="form">
+                                <dt><label for="job"><span class="req">*</span> Zawód</label></dt>
+                                <dd>
+                                    <div class="select">
+                                        <span></span>
+                                        <select name="job" id="job">
+                                            <option value="doctor">Lekarz</option>
+                                        </select>
+                                    </div>
+                                </dd>
+                                <dt><label for="name"><span class="req">*</span> Imię</label></dt>
+                                <dd><input type="text" name="name" id="name" class="text" /><span class="info">Proszę podać imię</span></dd>
+                                <dt><label for="surname"><span class="req">*</span> Nazwisko</label></dt>
+                                <dd><input type="text" name="surname" id="surname" class="text" /><span class="info">Proszę podać nazwisko</span></dd>
+                                <dt><label for="email"><span class="req">*</span> E-mail</label></dt>
+                                <dd><input type="text" name="email" id="email" class="text" /><span class="info">Proszę podać poprawny adres email</span></dd>
+                            </dl>
+                            <h4>
+                                Informacje o pacjencie
+                                <cite class="req">* pola obowiązkowe</cite>
+                            </h4>
+                            <dl class="form">
+                                <dt><label for="gender"><span class="req">*</span> Płeć</label></dt>
+                                <dd>
+                                    <div class="select">
+                                        <span></span>
+                                        <select name="gender" id="gender">
+                                            <option value="">Wybierz</option>
+                                            <option value="m">Mężczyzna</option>
+                                            <option value="f">Kobieta</option>
+                                        </select>
+                                    </div>
+                                </dd>
+                                <dt class="free"><label for="birthday">Data urodzenia</label></dt>
+                                <dd>
+                                    <input type="text" name="birthday" id="birthday" class="text cal" />
+                                    <a class="calendar" href="javascript:void(0)">Kalendarz</a>
+                                </dd>
+                                <dt class="free"><label for="age">Wiek pacjenta</label></dt>
+                                <dd><input type="text" name="age" id="age" class="text" /></dd>
+                                <dt class="free"><label for="initial">Inicjały pacjenta</label></dt>
+                                <dd><input type="text" name="initial" id="initial" class="text" /></dd>
+                                <dt class="free"><label for="race">Rasa</label></dt>
+                                <dd>
+                                    <div class="select">
+                                        <span></span>
+                                        <select name="race" id="race">
+                                            <option value="">Wybierz</option>
+                                        </select>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <h4>
+                                Informacje o leku
+                                <cite class="req">* pola obowiązkowe</cite>
+                            </h4>
+                            <dl class="form">
+                                <dt><label for="product"><span class="req">*</span> Produkt</label></dt>
+                                <dd>
+                                    <div class="select">
+                                        <span></span>
+                                        <select name="product" id="product">
+                                            <option value="fraxi">Votrient</option>
+                                        </select>
+                                    </div>
+                                </dd>
+                                <dt><label for="series"><span class="req">*</span> Nr serii produktu</label></dt>
+                                <dd><input type="text" name="series" id="series" class="text" /><span class="info">Proszę podać nr serii</span></dd>
+                                <dt><label for="desc"><span class="req">*</span> Opis zdarzenia</label></dt>
+                                <dd class="textarea"><textarea name="desc" id="desc" rows="6" cols="60"></textarea></dd>
+                                <dt><label for="from-from"><span class="req">*</span> Lek stosowany od</label></dt>
+                                <dd>
+                                    <input type="text" name="from-from" id="from-from" class="text short" /><span class="short"> - </span>
+                                    <input type="text" name="from-to" id="from-to" class="text short" />
+                                    <a class="calendar" href="javascript:void(0)">Kalendarz</a>
+                                    <span class="info">Proszę podać zakres czasowy</span>
+                                </dd>
+                                <dt><label for="period-from"><span class="req">*</span> Zakres czasowy</label></dt>
+                                <dd>
+                                    <input type="text" name="period-from" id="period-from" class="text short" /><span class="short"> - </span>
+                                    <input type="text" name="period-to" id="period-to" class="text short" />
+                                    <a class="calendar" href="javascript:void(0)">Kalendarz</a>
+                                    <span class="info">Proszę podać zakres czasowy</span>
+                                </dd>
+                                <dt><label for="amount"><span class="req">*</span> Dawka leku</label></dt>
+                                <dd><input type="text" name="amount" id="amount" class="text" /><span class="info">Proszę podać dawkę</span></dd>
+                                <dt><label for="way"><span class="req">*</span> Droga dawkowania</label></dt>
+                                <dd>
+                                    <div class="select">
+                                        <span></span>
+                                        <select name="way" id="way">
+                                            <option value="mouth">Doustnie</option>
+                                        </select>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <p>Informacje podanie w formularzu nie są w żaden sposób gromadzone i nie
+                            będą wykorzystywane w celu innym, niż realizacja tej usługi.</p>
+                            <p>Wyrażam zgodę na wykorzystanie informacji wskazanych przeze mnie w treści
+                            powyższego formularza, tylko i wyłącznie w celu realizacji tej usługi.
+                            Oświadczem jednocześnie, że zapoznałem się z regulaminem serwisu i w pełni
+                            akceptuję jego postanowienia.</p>
+                            <div id="warning">Proszę poprawić oznaczone miejsca w formularzu</div>
+                            <button type="submit" name="send" class="submit"><div>Wyślij pytanie</div></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="content">
+                <ul class="footermenu pipes">
+                    <li><a href="">Regulamin</a></li>
+                    <li><a href="">Nota prawna</a></li>
+                    <li><a href="">Mapa serwisu</a></li>
+                </ul>
+                <address>
+                    <a href="" class="gsk">GSK - GlaxoSmithKline</a>
+                    Data ostatniej modyfikacji 2010-12-07<br />
+                    Wszelkie prawa zastrzeżone GSK Commercial Sp. z o.o.
+                </address>
+                <h5>Przypisy:</h5>
+                <ul class="subquotes">
+                    <li>*TKI - inhibitory kinaz tyrozynowych;</li>
+                    <li>**RCC - Renal Cell Carcinoma;</li>
+                    <li>*** PFS całej populacji objętej badaniem wyniósł 9,2 vs 4,2
+                    miesiąca w grupie pazopanibu i placebo (p&lt;0,0001) </li>
+                    <li>1. Sternberg CN, et al. Pazopanib in locally advanced and/or
+                    metastatic renal cell carcinoma: results of a randomized Phase III
+                    trial. J Clin Oncol 2010; 28; 6:1061-1068.</li>
+                    <li>2. Karaman MW, et al. A quantitative analysis of kinase inhibitor
+                    selectivity. Nat Biotechnol 2008; 26:127-132.</li>
+                    <li>3. Kumar R, et al. Myelosuppression and kinase selectivity of multikinase
+                    angiogenesis inhibitors. Br J Cancer 2009; 101:1717-1723.</li>
+                    <li>4. LaPlant KD et al. Pazopanib: An Oral Multitargeted Tyrosine Kinase
+                    Inhibitor for Use in Renal Cell Carcinoma. Ann Pharmacother 2010; 44:1054-60.</li>
+                    <li>5. Votrient Charakterystyka Produktu Leczniczego. 2010. 6. Hawkins R, et al.
+                    Quality of Life (QOL) in treatment-naive and cytokine-pretreated patients with
+                    advanced renal cell carcinoma (RCC) treated with pazopanib: results from a phase
+                    III double-blind, placebocontrolled trial 2009 ECCO-ESMO Poster Number 132.</li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
